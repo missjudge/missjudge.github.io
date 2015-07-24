@@ -1,0 +1,156 @@
+<!doctype html>
+
+<html>
+  <head>
+  	<title>Code Your Own Adventure</title>
+    <link href='http://fonts.googleapis.com/css?family=Life+Savers:700|Mountains+of+Christmas|Kranky' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  
+<!-- START Jesse "the BODY" Ventura -->
+  <body>	
+  	<!-- START header -->
+    <div id="banner">
+        <header id="title">Code Your Own Adventure</header>
+    </div>
+     <!-- END header -->
+
+    <!-- START intro page -->
+    <div id="page-one">
+	    <div id="tangled">
+		    <hr>
+		    <h1 class="book-title">The Tangled Web We Weave</h1>
+		    <hr>
+	    </div>
+	    
+	    <div class="intro animated">
+	    
+	        <p>Welcome to choose your own adventure web development-style!  You&#39;re a young n00b set to take the web development world by storm.  But first, you must learn the basics&#8230; </p>
+	
+	        <div class="pic">
+	            <img id="coffee" src="img/coffeeblack.png" class="third" alt="Black
+	coffeecomic"/>
+	        </div>
+	
+	        <button class="btn" id="start">Start your adventure</button>
+				
+	    </div>
+	  </div>
+    <!-- END intro page -->
+    
+    <!-- START first question -->
+    <div class="first animated">
+    	
+      <div class="first-card animated">
+
+        <p>You heard about a place called
+General Assembly where you might fine tune your world-storming skills.  As a
+reasonably introverted techie, you head to the first class and find out that you
+must memorize everyone&#39;s name and recite them to the class.  What do you
+do?</p>
+
+      </div>
+      
+      <div class="second-card animated">
+
+      	<button class="btn" id="play">Play the name game</button>
+      	<div class="clearfix"></div>
+      	
+      	<button class="btn" id="run">You grab George (the plant mascot) and hide in the bathroom</button>
+
+				<section id="think-again">Don't be lame, just play the game...</section>
+
+      </div> 
+      
+    </div>
+    <!-- END first question -->
+    
+    <!-- START second question -->
+    <div id="question2a">
+      <div id="question2a-col1">
+      	<p>You survived without feeling too dense &#40;just wait until you get to JavaScript&#8230;&#41;.  Time to take on HTML.  If only you could figure out why your page layout is all messed up&#8230;</p>
+        <p>Here's what you want your layout to look like.</p>
+        <img id="layout" src="img/question3img.png" alt="layout">
+        <img id="css" src="img/question3css.png" alt="css">
+      </div>
+    </div>
+    
+    <div id="question2b">
+      <div id="question2b-col2">	
+        <p>Here's your existing HTML.</p>
+    		<ul id="sortable1" class="connectedSortable">
+          <li class="ui-state-default"><img id="list1" src="img/q3line1.png" alt="line"></li>
+          <li class="ui-state-default"><img id="list2" src="img/q3line2.png" alt="line"></li>
+          <li class="ui-state-default"><img id="list3" src="img/q3line3.png" alt="line"></li>
+          <li class="ui-state-default"><img id="list4" src="img/q3line47912.png" alt="line"></li>
+          <li class="ui-state-default"><img id="list5" src="img/q3line5.png" alt="line"></li>
+          <li class="ui-state-default"><img id="list6" src="img/q3line6.png" alt="line"></li>
+          <li class="ui-state-default"><img id="list7" src="img/q3line47912.png" alt="line"></li>
+          <li class="ui-state-default"><img id="list9" src="img/q3line47912.png" alt="line"></li>
+          <li class="ui-state-default"><img id="list10" src="img/q3line10.png" alt="line"></li>
+          <li class="ui-state-default"><img id="list11" src="img/q3line11.png" alt="line"></li>
+          <li class="ui-state-default"><img id="list12" src="img/q3line47912.png" alt="line"></li>
+          <li class="ui-state-default"><img id="list14" src="img/q3line14.png" alt="line"></li>
+        </ul>
+      </div>
+ 
+      <div id="question2b-col3">
+        <p>Slide these clearfixes into the right place in the HTML to the left to create your desired layout.</p>
+        <ul id="sortable2" class="connectedSortable">
+          <li class="ui-state-highlight"><img id="list8" src="img/q3line8.png" alt="line"></li>
+          <li class="ui-state-highlight"><img id="list13" src="img/q3line13.png" alt="line"></li>
+        </ul>
+        <div class="clearfix"></div>
+
+        <button id="boom" class="btn">Submit</button>
+
+    </div>
+    
+    </div>
+    <!-- END second question -->
+
+    <!-- START third question -->
+    <div id="question3a">
+      <p>Having successfully navigated all of the floating boxes in your path, you turn to CSS to class the place up.  Your classmate, Charlie Foxtrot, sends you a funny message during class so you return the favor by responding:</p>
+    </div>
+    
+    <div id="question3b">
+      <div id="question3b-opt1"> 
+				<img src="img\wife.png" alt="Wife">
+				<div class="clear-fix"></div> 
+				<button class="btn animated" id="q3b-opt1">Good one, bro!</button>
+      </div>
+      
+      <div id="question3b-opt2"> 
+				<img src="img\Norris.png" alt="Norris">
+				<div class="clear-fix"></div> 
+				<button class="btn animated" id="q3b-opt2">Yup.</button>
+      </div>
+      
+      <div class="clear-fix"></div> 
+      
+   		<div class="colorbar"></div>
+      
+    </div>
+    <!-- END third question -->
+
+		<!-- LOSE screen -->
+		<div id="lose">
+			<img src="img/goodDaySir.gif" alt="Good Day, Sir!"/>	
+		</div>
+		
+		<!-- WIN screen -->
+		<div id="win">
+			<h1>We're <img class="ga" src="img/ga_noback.png" alt="GA" /><img class="ga" src="img/ga_noback.png" alt="GA" /> for your work! You're HIRED!</h1>
+      <img id="kickline" src="http://i.giphy.com/HArJuEUaq4hXO.gif" alt="Kickline" />
+		</div>
+
+  	<!-- START JS -->
+	  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	  <script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
+	  <script src="js/index.js"></script>
+		<!-- START JS -->
+		
+	<!-- END of Jesse "the BODY" Ventura -->	
+  </body>
+</html>

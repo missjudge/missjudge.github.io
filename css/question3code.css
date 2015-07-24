@@ -1,0 +1,33 @@
+/* Structure */
+.main {
+	width: 66.66%;
+	float: left;
+}
+
+.main-left {
+	width: 50%;
+	float: left;
+}
+
+.main-right {
+	width: 50%;
+	float: right;
+}
+
+.secondary {
+	width: 33.33%;
+	float: right;
+}
+
+/* Format */
+.box {
+	background: black;
+	border: 1px solid rgba(0, 0, 0, .4);
+	height: 200px;		
+	margin: 10px;
+}
+
+.clearfix {
+	display: table;
+	clear: both;
+}

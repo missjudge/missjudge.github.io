@@ -1,0 +1,591 @@
+/******** global ********/
+.hide {
+	display: none;
+}
+
+.animated {
+	transition: transform .2s ease;
+	transform: translate(0, 0);
+}
+
+.offstage-bottom {
+	transform: translate(0,50px);
+}
+
+.offstage-right {
+	transform: translate(500px, -200px);
+}
+
+.offstage-left {
+	transform: translate(-500px, 200px);
+}
+
+.clear-fix {
+	display: block;
+	clear: both;
+}
+
+.back-to-black {
+  background-color: black;	
+}
+
+
+
+/******** main page ********/
+#banner {
+	background-color: rgb(0, 0, 0);
+	height: 80px;
+	width: 100%;
+	padding-top: 15px;
+	border-bottom: gray 2px solid;
+	margin-bottom: 1rem;
+	font-family: 'Kranky', cursive;
+}
+
+#title {
+	color: rgb(255, 255, 255);
+	height: 50px;
+	width: 60%;
+	text-align: center;
+	margin: auto;
+	padding-top: 2px;
+	padding-bottom: 7px;
+	border-radius: 50px;
+	font-size: 2.9rem;
+	border: white 2px solid;
+	box-shadow: 2px 2px 10px 0px #B78282;
+	background:-moz-linear-gradient( center top, #CC0000 29%, #800000 76% );
+	background:-ms-linear-gradient( top, #CC0000 29%, #800000 76% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC0000', endColorstr='800000');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(29%, #CC0000), color-stop(76%, #800000) );
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(29%, #CC0000), color-stop(76%, #800000) );
+	background-color:#CC0000;
+}
+
+body {
+	background-image: url("../img/web.jpg");
+	background-size: cover;
+	margin: 0;
+}
+
+.intro {
+	width: 55%;
+	margin: 5px auto 10px auto;
+	color: white;
+	line-height: 150%;
+	font-family: 'Life Savers', cursive;
+	font-size: 500;
+}
+
+.intro p {
+	background-color: black;
+	font-size: 20px;
+	-webkit-margin-before: 10px;
+	-webkit-margin-after: 1rem;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+}
+
+.book-title {
+	color: white;
+	background-color: black;
+	width: 55%;
+	margin: 0 auto;
+	padding: 10px 0; 
+	text-align: center;
+	font-size: 2.3rem;
+	font-family: 'Mountains of Christmas', cursive;
+}
+
+hr {
+	width: 55%;
+	align: center; 	
+	border: 1px;
+	background-color: white;
+	height: 1px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#coffee {
+	height: 45%;
+	width: 45%;
+	margin: 5px 27.5%;
+}
+
+
+/******** First question ********/
+.first {
+	position: absolute;
+	min-width: 800px;
+	width: 70%;
+	height: auto;
+	top: 200px;
+	left: 15%;
+	background-image: url('../img/openbookold_noback.png');
+	background-size: cover;
+	display: none;
+}
+
+.first-card {
+	float: left;
+	width: 30%;
+	height: 28em;
+	margin: 40px 0 0 19%;
+	padding: 0;
+	color: black;
+	font-family: 'Life Savers', cursive;
+	line-height: 250%;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.second-card {
+	float: left;
+	width: 30%;
+	height: auto;
+	margin: 7% 0 0 5%;
+	color: black;
+}
+
+#think-again {
+	display: none;
+	width: 100px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 15% 0 0 25%;
+	font-family: 'Life Savers', cursive;
+	line-height: 150%;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+#start {
+	width: 50%;
+	margin: 10px 25%;
+	border-radius:20px;
+	border:1px solid #3E0E0E;
+	padding:10px ;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #CC0000 29%, #800000 76% );
+	background:-ms-linear-gradient( top, #CC0000 29%, #800000 76% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC0000', endColorstr='800000');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(29%, #CC0000), color-stop(76%, #800000) );
+	background-color:#CC0000;
+	color:white;
+	display:inline-block;
+	text-shadow:1px 1px 0px #8D5A5A;
+ 	-webkit-box-shadow: 1px 1px 10px 0px #B78282;
+ 	-moz-box-shadow: 1px 1px 10px 0px #B78282;
+ 	box-shadow: 1px 1px 10px 0px #B78282;
+}
+
+#start:hover {
+	background:-moz-linear-gradient( center top, #2B2B73 29%, #151558 76% );
+	background:-ms-linear-gradient( top, #2B2B73 29%, #151558 76% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2B2B73', endColorstr='#151558');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(29%, #2B2B73), color-stop(76%, #151558) );
+	background-color:#2B2B73;
+	border: 1px solid #07073A;
+}
+
+#start:active {
+	position:relative;
+	top:1px;
+}
+
+.btn {
+  background: #d90016;
+  background-image: -webkit-linear-gradient(top, #d90016, #800505);
+  background-image: -moz-linear-gradient(top, #d90016, #800505);
+  background-image: -ms-linear-gradient(top, #d90016, #800505);
+  background-image: -o-linear-gradient(top, #d90016, #800505);
+  background-image: linear-gradient(to bottom, #d90016, #800505);
+  -webkit-border-radius: 32;
+  -moz-border-radius: 32;
+  border-radius: 50px;
+  font-family: 'Mountains of Christmas', cursive;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 10px 20px 10px 20px;
+  margin: 30px;
+  border: 2px solid #630000;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #314174;
+  text-decoration: none;
+  border: 2px solid #08143B;
+}
+
+#play, #run {
+	width: 100%;
+	}
+
+
+
+/******** Question(s) 2 ********/
+#question2a {
+	background-color: rgba(13, 77, 77, .7);
+	color: white;
+	width: 73%;
+	height: 700px;	
+	margin: 0 auto;
+	position: absolute;
+	top: 100px;
+	left: 0;
+	display: none;
+	overflow: scroll;
+	}
+
+#question2a-col1 {
+	width: 60%;
+	height: 100%;	
+	padding-left: 20px;
+	margin-top: 20px;
+	font-family: 'Life Savers', cursive;
+	line-height: 200%;
+	font-weight: 700;
+	font-size: 20px;
+	}
+	
+#question2b {
+	background-color: rgba(53, 79, 0, .7);
+	color: white;
+	width: 54%;	
+	height: 700px;
+	position: absolute;
+	top: 100px;
+	right: 0;
+	display: none;
+	overflow: scroll;
+}
+
+#question2b-col2 {
+	width: 50%;	
+	float: left;
+	font-family: 'Life Savers', cursive;
+	line-height: 200%;
+	font-weight: 700;
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+#question2b-col2 p {
+	margin: 20px 0 0 0;
+}
+
+#question2b-col3 {
+	width: 45%;	
+	float: right;
+	font-family: 'Life Savers', cursive;
+	line-height: 200%;
+	font-weight: 700;
+	font-size: 20px;
+}
+	
+#question2b-col3 p {
+	width: 80%;	
+	margin: 0 10px 5px 0;
+	padding-top: 20px;
+	font-family: 'Life Savers', cursive;
+	line-height: 200%;
+	font-weight: 700;
+}
+	
+#boom {
+	margin: 30px 25%;	
+}
+
+#layout {
+	height: 300px;
+	width: 300px;
+	position: relative;
+	top: 10px;
+	left: 60px;
+	border: 2px solid black;
+	display: none;
+}
+
+#css {
+	position: relative;
+	top: 30px;
+	left: -20px;
+	border: 2px solid white;
+	display: none;
+}
+
+#sortable1 {
+    width: 200px;
+    min-height: 20px;
+    list-style-type: none;
+    margin: 5px 0 0 0 ;
+    padding: 0;
+    float: left;
+    margin-right: 10px;
+  } 
+
+#sortable2 {
+    width: 200px;
+    margin: 0 30px 0 0;
+    list-style-type: none;
+    float: left;
+  }
+
+ #sortable1 li {
+    font-size: 1.2em;
+    width: 120px;
+  }
+  
+ #sortable2 li {
+ 	margin: 5px 15% 20px 0;	
+ }
+
+#list1, #list8, #list9, #list10, #list13, #list12, #list14 {
+		border: 1px solid white;
+}
+
+ #list3, #list6 {
+  	margin-left: 60px;
+  	border: 1px solid white;
+  }
+
+ #list2, #list4, #list5, #list7, #list11 {
+  	margin-left: 30px;
+  	border: 1px solid white;
+  }
+
+
+
+/******** Question(s) 3 ********/
+#question3a {
+	background-color: rgba(204, 0, 0, .7);
+	color: white;
+	width: 100%;
+	height: 400px;	
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+	display: none;
+	padding: 20px;
+}
+
+#question3a p {
+	width: 90%;
+	margin: 0 auto;
+	font-family: 'Life Savers', cursive;
+	line-height: 150%;
+	font-weight: 700;
+	font-size: 20px;
+}
+	
+#question3b {
+	color: white;
+	width: 100%;	
+	position: relative;
+	top: -350px;
+	display: none;
+}
+
+.colorbar {
+	background-color: #260000;
+	width: 100%;
+	height: 70px;
+	position: absolute: 
+	top: 100px;
+	margin: -90px 0 0 0;
+}
+
+#question3b-opt1 {
+	float: left;
+	width: 30%;
+	margin: 20px 0 0 20%;
+}
+
+#question3b-opt1 img {
+	border: 2px black solid;
+}
+
+#question3b-opt2 {
+	float: left;
+	width: 30%;
+	margin: 35px 0 0 8%;
+}
+
+#question3b-opt2 img {
+	border: 2px black solid;
+}
+
+#q3b-opt1 {
+	margin-top: 46px;
+}
+
+#q3b-opt2 {
+	margin-left: 25%;	
+	margin-top: 71px;
+}
+
+#lose {
+	background-color: rgba(145, 51, 145, .5);
+	color: white;
+	display: none;
+	width: 60%;
+	height: auto;
+	margin: 20px 20%;
+	border: 5px double rgba(255, 255, 250, .3);
+}
+
+#lose img {
+	width: 60%;
+	height: auto;
+	margin: 15% 20%;	
+}
+
+#win h1 {
+	text-align: center;
+	padding: 0;
+}
+
+#win {
+	background-color: rgba(92, 92, 153, .8);
+	color: white;
+	display: none;
+	width: 80%;
+	height: auto;
+	margin: 10px 10%;
+	padding-top: 20px;
+	border: 8px double rgba(255, 255, 250, .8);
+	font-family: 'Life Savers', cursive;
+	font-size: 24px;
+}
+
+#kickline {
+	width: 60%;
+	height: auto;
+	margin: 0 20% 10% 20%;
+	border: 5px solid black;
+}
+
+.ga {
+	width: 50px;	
+	height: auto;
+	margin-bottom: -15px;
+}
+
+/******** Responsive ********/
+@media ( max-width: 775px ) {
+	#title {
+		width: 400px;
+		font-size: 1.75rem;
+	}
+
+	.intro, .book-title, hr {
+		width: 375px;
+	}
+
+	#coffee {
+		width: 200px;
+	}
+
+}
+
+
+@media ( max-width: 930px ) {
+	.first {
+		width: 100%;
+		min-width: 400px;
+		left: 0;
+		background-image: none;
+		background-color: black;
+		color: white;
+		margin: 0;
+	}
+	
+	.first-card {
+		width: 90%;
+		height: auto;
+		text-align: center;
+		margin: 1% 5%;
+		padding: 0;
+		color: white;
+	}
+
+	.second-card {
+		width: 90%;
+		height: auto;
+		text-align: center;
+		margin: 10px 5%;
+		padding: 0;
+		color: white;
+	}
+
+	#think-again {
+		width: 30%;
+		margin: 0 35%;
+		padding: 0;
+	}	
+
+	#play, #run {
+		width: 70%;
+		margin: 10px 5%;
+	}
+
+}
+
+@media ( max-width: 1175px ) {
+	#question2a {
+		width: 100%;
+		min-width: 600px;
+		height: 500px;
+		position: relative;
+		top: 0;
+		margin: -15px 0 0 0 ;
+	}
+	
+	#question2a-col1 {
+		width: 90%;
+		margin: 0 5%;
+		text-align: center;
+	}
+	
+	#question2b {
+		position: relative;
+		top: -5px;
+		width: 100%;
+		min-width: 600px;
+		height: 600px;
+	}
+	
+	#question2b-col2, #question2b-col3 {
+		width: 40%;
+		padding: 0;
+		margin: 0 5%;
+		text-align: center
+	}
+	
+}
+
+@media ( max-width: 730px ) {
+	#question3a {
+		height: auto;	
+		padding: 1%;
+	}
+	
+	#question3b {
+		top: 0;
+	}
+	.colorbar {
+		display: none;
+	}
+		
+	#question3b-opt1, #question3b-opt2 {
+		float: none;
+		margin: 20px 30%;
+	}
+
+	#question3b-opt1 .btn , #question3b-opt2 .btn {	
+		margin-top: 0;
+
+}
+}
